@@ -10,17 +10,14 @@ const EventComp = ({ event_id, event_name, event_description, event_date_time, e
     
       <ul>
         <Link className='link-txt' key={event_id} to={'/event-detailed/' + event_name} >
-        <li className='strong-txt-L'>{event_name.split('rec')[0]}</li>
-        <li className='li-content'>{event_description}</li>
-        <li className='strong-txt-L'>Date & Time</li>
-        <li className='li-content'>{event_date_time}</li>
-        <li className='strong-txt-L'>Location</li>
-        <li className='li-content'>{event_location}</li>
-        <li className='strong-txt-L'>Frequency</li>
-        <li className='li-content'>{recurring_event_description}</li>
-        {/* <li>{fullname_event_organiser}</li>
-        <li>{email_event_organiser}</li>
-        <li>{telephone_event_organiser}</li> */}
+          <li className='strong-txt-L'>{event_name.split('rec')[0]}</li>
+          <li className='li-content'>{event_description}</li>
+          <li className='strong-txt-L'>Date & Time</li>
+          <li className='li-content'>{event_date_time}</li>
+          <li className='strong-txt-L'>Location</li>
+          <li className='li-content'>{event_location}</li>
+          <li className='strong-txt-L'>Frequency</li>
+          <li className='li-content'>{recurring_event_description}</li>
         </Link >
       </ul>
     
@@ -81,7 +78,7 @@ const FormErrors = ({formErrors}) =>
 {Object.keys(formErrors).map((fieldName, i) => {
   if(formErrors[fieldName].length > 0){
     return (
-      <p id='error-container' key={i}>{fieldName} {formErrors[fieldName]}</p>
+      <p id='error-container' key={i}><span>&#9785; This </span>{fieldName} {formErrors[fieldName]}</p>
     )
     } else {
     return '';

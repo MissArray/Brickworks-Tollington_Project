@@ -114,40 +114,42 @@ console.log('BEFORE SWITCH', this.state.nameValid);
         <label className='form-label' htmlFor="description">Description of Social Action  <span className='red-asterisk'>*</span></label>
         <textarea name="description" id="description" cols="40" rows="10" value={this.state.description} onChange={this.handleChange}></textarea>
        
-        <p className='strong-txt-M'>Please click on the options that apply</p>
+        <div className='container-M'>
+          <p className='strong-txt-M'>Please click on the options that apply</p>
 
-        <div className='checkbox-choices'>
-          <span className='running-txt-M'>&#8226; I want to connect with a local Community Organiser</span>
-            <label className="label-checkbox" htmlFor="cntWithCommunityAdviser">
-              <input className='checkbox'
-                type="checkbox"
-                id="cntWithCommunityAdviser"
-                name="cntWithCommunityAdviser"
-                checked={this.state.cntWithCommunityAdviser}
-                onChange={this.handleChange}
-              />
+          <div className='checkbox-choices'>
+            <span className='running-txt-M'>&#8226; I want to connect with a local Community Organiser</span>
+              <label className="label-checkbox" htmlFor="cntWithCommunityAdviser">
+                <input className='checkbox'
+                  type="checkbox"
+                  id="cntWithCommunityAdviser"
+                  name="cntWithCommunityAdviser"
+                  checked={this.state.cntWithCommunityAdviser}
+                  onChange={this.handleChange}
+                />
+                </label>
+          </div>
+            <br/>
+          <div className="checkbox-choices">
+            <span className='running-txt-M'>&#8226; I want to train as a Community Organiser
+            </span>
+              <label className="label-checkbox" htmlFor="trainCommunityAdviser">
+                <input className='checkbox'
+                  type="checkbox"
+                  id="trainCommunityAdviser"
+                  name="trainCommunityAdviser"
+                  checked={this.state.trainCommunityAdviser}
+                  onChange={this.handleChange}
+                />
               </label>
-         </div>
-          <br/>
-        <div className="checkbox-choices">
-          <span className='running-txt-M'>&#8226; I want to train as a Community Organiser
-          </span>
-            <label className="label-checkbox" htmlFor="trainCommunityAdviser">
-              <input className='checkbox'
-                type="checkbox"
-                id="trainCommunityAdviser"
-                name="trainCommunityAdviser"
-                checked={this.state.trainCommunityAdviser}
-                onChange={this.handleChange}
-              />
-            </label>
+          </div>
         </div>
         </form>
         
         <button id="form-button" className="button-large" disabled= { !this.state.formValid} type="submit">Submit</button>
       
     </main>
-    <div>
+    <div id='form-errors-container'>
       <FormErrors formErrors={this.state.formErrors} />
     </div>
 

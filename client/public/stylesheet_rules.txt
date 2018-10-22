@@ -13,3 +13,7 @@
 
 * h1: 1.6rem
 * h2: 
+
+## Symbols & special characters
+
+* bullet, small: &#8226;
