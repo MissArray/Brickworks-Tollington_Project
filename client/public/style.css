@@ -5,8 +5,8 @@ body {
   background-image: url('./images/Brickworks-bacgkround.jpeg');
   background-size: cover; 
   background-color: #FAFAFA;
-  padding-left: 0.8vw;
-  padding-right: 0.8vw;
+  padding-left: 1.6vw;
+  padding-right: 1.6vw;
 }
 
 #logo {
@@ -123,9 +123,6 @@ body {
   transform: translateX(-2px) rotate(-45deg);
 }
 
-/* #menu-div {
-  
-} */
 
 .menu {
   position: absolute;
@@ -244,21 +241,26 @@ running-txt {
   color: #2a2a2a;
 }
 
-.strong-txt-L {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
-  color: #585858; 
-}
 
   /*EMPHASIS*/
-  #click-here {
+  .strong-txt-M {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   color: #585858; 
   margin-top: 1rem;
   margin-bottom: 1rem;
+  }
+
+  .strong-txt-L {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #585858; 
+  }
+
+  .italicised {
+    font-style: italic;
   }
 
   /* LINKS */
@@ -442,13 +444,20 @@ acc-h3 {
 #form-button {
   margin-top: 20px;
 }
+#form-button:disabled {
+  margin-top: 2rem;
+  background-color: lightgray;
+}
 
 /*FORM*/
-#main-form {  
+.main-form {  
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  min-width: 40vw;
   max-width: 90vw;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 #form-h3 {
@@ -460,6 +469,13 @@ acc-h3 {
   
 }
 
+.checkbox-choices {
+  display: flex;
+  flex-direction: row;
+  line-height: 1rem;
+  margin-top: 10px;
+}
+
 .form-label {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
@@ -468,15 +484,13 @@ acc-h3 {
   margin-top: 10px;
 }
 
-.form-input {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #a9b7b9;
-  padding: 6px;
+form > input {
+  height: 2rem;
+  min-width: 40vw;
+  max-width: 90vw;
+  margin-bottom: 2rem;
   border-radius: 5px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.2rem;
-
+  background-color: #eeeeee;
 }
 
 /* Currently it does not seem possible to type into the textarea? */
@@ -485,23 +499,27 @@ textarea {
   border-width: 2px;
   border-color: #a9b7b9;
   border-radius: 5px;
+  margin-bottom: 20px;
 
 }
 
-.choices {
-  display: flex;
-  flex-direction: row;
-  margin: 0.5rem;
+.red-asterisk {
+  color: red;
+  font-size: 1.5rem;
+  }
+
+  .label-checkbox {
+    margin-right: 0;
+    margin-left: auto;
+  }
   
-}
-
-.choices-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #2a2a2a;
-}
-
+  .checkbox {
+    border-radius: 5%;
+    width: 2rem;
+    height: 1rem;
+    margin-right: 0;
+    margin-left: auto;
+  }
 
 /* FOOTER */
 footer {
