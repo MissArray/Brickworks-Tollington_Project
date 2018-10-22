@@ -146,10 +146,10 @@ console.log('BEFORE SWITCH', this.state.nameValid);
         </div>
         </form>
         
-        <button id="form-button" className="button-large" disabled= { !this.state.formValid} type="submit">Submit</button>
+        <button className="form-button" className="button-large" disabled= { !this.state.formValid} type="submit">Submit</button>
       
     </main>
-    <div id='form-errors-container'>
+    <div className='form-errors-container'>
       <FormErrors formErrors={this.state.formErrors} />
     </div>
 
