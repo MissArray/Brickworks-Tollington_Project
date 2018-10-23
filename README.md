@@ -10,9 +10,9 @@ API ID
 MIT https://opensource.org/licenses/MIT
 
 # Contributors to original project
-Sangita Sunuwar
-Emily Rever
-Harry Mead
+Sangita Sunuwar,
+Emily Rever,
+Harry Mead,
 Artemis Gause
 
 # Contributors to this fork
