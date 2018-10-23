@@ -265,7 +265,7 @@ running-txt {
   color: #585858; 
   }
 
-  .strong-txt-L {
+  .strong-txt-L, .li-p-strong {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
@@ -292,43 +292,38 @@ ol {
   display: flex;
   flex-direction: column;
   list-style-type: disc;
-  width: 70vw;
-  padding: 1rem;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
+  padding: 0.2rem;
  }
 
  .ol-num {
   display: flex;
   flex-direction: column;
   list-style-type: number;
-  width: 70vw;
-  padding: 1rem;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
+  padding: 0.2rem;
  }
 
 ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  width: 70vw;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 0.2rem;
 }
 
 li {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.4rem;
-  color: #2a2a2a;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
+  display: flex;
+  flex-direction: column;
+  }
+
 
 .li-content {
   background-color: #f5f5f5;
   padding: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  color: #2a2a2a;
 }
 
 .insp-answer {
@@ -570,9 +565,16 @@ footer {
   /*IMAGES*/
 
   .content-image {
-    width: 60vmax;
+    width: 75vmin;
+    margin: 0 auto;
     box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
 
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
   }
 
 /*----------------------------------------------*/

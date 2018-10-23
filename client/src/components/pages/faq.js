@@ -6,7 +6,8 @@ class Faq extends React.Component {
         return(
     <div>
         <div data-testid = "faq-page" className='wrapper'>
-        <h1 className='pageHeadings'>FAQs</h1>
+        <h1 className='pageHeadings'>FAQ</h1>
+        <div id='sidebar'></div>
         <main>
             <ul>
                     <li><p className='li-p-strong'>&#8226; &ensp; How does Brickworks connect me with others who can help me develop my idea for a social action?</p>
@@ -20,15 +21,14 @@ class Faq extends React.Component {
                      <li><p className='li-p-strong'>&#8226; &ensp; Will it cost me to hire a meeting space at Brickworks and am I limited to specific days or times?</p>
                 <span className='li-content'>As we are developing Brickworks as a Social Action Hub we want to encourage local people to use the facilities this community centre offers. Brickworks is open seven days a week and from 08:00 through to 21:00 most days. We intend to offer the meeting space for free. Get in touch with us at Brickworks to find out more.</span></li>       
                      <li><p className='li-p-strong'>&#8226; &ensp; How are my personal details that I am entering being used?</p>
-                <span className='li-content'>You can read the Brickworks Social Action Hub privacy policy</span><a href='../../../public/assets/privacy-policy-hcca.pdf'> here</a>.</li>
+                <span className='li-content'>You can read the Brickworks Social Action Hub privacy policy <a href='https://hanleycrouch.files.wordpress.com/2018/06/privacy-policy-hcca.pdf'>here</a>.</span>
+                </li>
             </ul>
         </main>
         </div>
     </div>
   );}
 }
-//     <footer>
-//         &copy; Brickworks Social Action Community 2018. 
-//     </footer>     
+    
 
 export {Faq};
