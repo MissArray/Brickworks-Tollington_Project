@@ -308,6 +308,10 @@ running-txt {
     font-style: italic;
   }
 
+  .centred-txt {
+    text-align: center;
+  }
+
   /* LINKS */
   .link {
     color: #3343D7;
@@ -713,8 +717,8 @@ footer {
   #hub-description {    
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-    margin-left: 18rem;
-    margin-right: 18rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
     font-size: 1.6rem;   
   }
 
