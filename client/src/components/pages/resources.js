@@ -40,17 +40,17 @@ const Resources = () => (
                 <li>Don't give up, have patience and be committed.</li>
            </ol>
            
-          <p className='strong-txt-M'>Useful links</p>
+          <p className='strong-txt-L'>Useful links</p>
 
-                <div className='container-M'> 
-                <span className='strong-txt-M'>&#8226; Social action explained: &nbsp;
+                <div id='resources-container' className='container-M'> 
+                <span className='semi-txt-M'>&#8226; Social action explained: &nbsp;
                     <a className='resource-link' href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/591797/A_description_of_social_action.pdf">A description of Social Action</a>
                     </span>
                     <br/>
-                <span className='strong-txt-M'>&#8226; How to lead social action: &nbsp;
+                <span className='semi-txt-M'>&#8226; How to lead social action: &nbsp;
                     <a className='resource-link' href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/591799/Leadership_and_culture_change_to_enable_social_action.pdf'>Leadership and culture change</a>
                    </span>
-                <span className='strong-txt-M'>&#8226; How to carry out a social action: &nbsp;
+                <span className='semi-txt-M'>&#8226; How to carry out a social action: &nbsp;
                     <a className='resource-link' href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/591805/Enabling_social_action_methodology.pdf'>Methodology</a>
                 </span>
                 </div>

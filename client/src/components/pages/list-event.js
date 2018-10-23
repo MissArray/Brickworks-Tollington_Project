@@ -91,7 +91,7 @@ console.log('BEFORE SWITCH', this.state.nameValid);
       });
 
       this.setState({ name: '', email: '', phone: '', description: '', eventTitle: '', date: '', time: '', venue: '', hireSpace: false, listEvent: false, formErrors: {name: '', email: '', description: ''}, nameValid: false, emailValid: false, descriptionValid: false, formValid: false });
-      alert('your form has been submitted, we will get back to you soon');
+      alert('Thank you, we will get back to you soon');
 
   }
 

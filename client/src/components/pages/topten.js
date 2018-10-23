@@ -43,12 +43,12 @@ const TopTen= () => (
            </ol>
 
         <div id='top-ten-options'>
-        <p><label className='strong-txt-L' htmlFor="all-events">
+        <p><label className='strong-txt-M' htmlFor="all-events">
                 <Link to='/contactUs'><span className='link'>Click here</span></Link><span> to register an interest to start a social action</span>
             </label>
         </p>
         <p> 
-            <label className='strong-txt-L'htmlFor="list-event">
+            <label className='strong-txt-M'htmlFor="list-event">
             <Link to='/list-event'><span className='link'>Click here</span></Link> to register an interest to promote a social action
             </label>
         </p>

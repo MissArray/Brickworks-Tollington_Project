@@ -46,7 +46,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Krub', sans-serif;
   margin: 1rem;
   font-size: 1.4rem;
   color: whitesmoke;
@@ -156,7 +156,7 @@ body {
   background-color: #7e7e7e;
   color: #fafafa;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 3rem;
@@ -164,14 +164,14 @@ body {
   }
 
 h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: #585858; 
 }
 
 .h2-left {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: #585858; 
@@ -180,7 +180,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   color: #585858; 
@@ -211,6 +211,9 @@ main {
   background-color:#efefef;
   }
 
+#resources-container {
+  box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
+}
 
   /*TEXT CONTAINERS*/
 
@@ -218,10 +221,16 @@ main {
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Krub', sans-serif;
     font-size: 1.4rem;
     color: #2a2a2a;
   }
+
+#project-description {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
 
   .container-M {
     display: flex;
@@ -230,7 +239,7 @@ main {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 5px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Krub', sans-serif;
     font-size: 1.2rem;
     color: #2a2a2a;
     font-weight: normal;
@@ -242,42 +251,52 @@ main {
   justify-items: flex-start;
   background-color: #f5f5f5;
   padding: 1rem;
+  border-radius: 5px;
+  box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
   }
     
 
   /* RUNNING TEXT */
 running-txt {
   margin-left: 0.2rem;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Krub', sans-serif;
+  font-size: 1.3rem;
   color: #2a2a2a;
   font-weight: normal;
 }
 
 .running-txt-L {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #2a2a2a;
   text-align: left;
 }
 
 .running-txt-M {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #2a2a2a;
 }
 
 
   /*EMPHASIS*/
-  .strong-txt-M {
-  font-family: 'Nunito', sans-serif;
+
+.semi-txt-M {
+  font-family: 'Krub', sans-serif;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  color: #2a2a2a; 
+}
+
+  .strong-txt-M {
+  font-family: 'Krub', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
   color: #585858; 
   }
 
   .strong-txt-L, .li-p-strong {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    font-size: 1.6rem;
+    font-family: 'Krub', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
     color: #585858; 
   }
 
@@ -315,6 +334,9 @@ ol {
   list-style-type: number;
   margin: 1rem;
   padding: 0.2rem;
+  font-family: 'Krub', sans-serif;
+  font-size: 1.2rem;
+  color: #2a2a2a;
  }
 
 ul {
@@ -326,7 +348,7 @@ ul {
 }
 
 li {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.2rem;
   color: #2a2a2a;
   padding: 0.5rem;
@@ -335,8 +357,8 @@ li {
 
 .li-content {
   background-color: #f5f5f5;
-  padding: 1rem;
-  font-family: 'Nunito', sans-serif;
+  padding: 0.5rem;
+  font-family: 'Krub', sans-serif;
   font-size: 1.2rem;
   color: #2a2a2a;
 }
@@ -358,7 +380,7 @@ li {
 
 /*ACCORDION LIST*/
 
-.accordion {
+/* .accordion {
   padding: 0 10px;
   margin: 0 auto;
   list-style: none outside;
@@ -368,7 +390,7 @@ li {
   display: block;
   position: relative;
   cursor: pointer;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   color: #585858;
@@ -418,7 +440,7 @@ li {
 }
 
 acc-h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   color: #585858;
@@ -444,13 +466,13 @@ acc-h3 {
   overflow: hidden;
   position: absolute;
   left: -9999px;
-}
+} */
 
 /*BUTTONS*/
 
 .button-large {
   margin: 0 auto;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   letter-spacing: 0.08rem;
   font-weight: 600;
   font-size: 1.7rem;
@@ -475,7 +497,7 @@ acc-h3 {
 .form-button {
   margin-top: 20px;
 }
-.form-button:disabled {
+.form-button, .button-large:disabled {
   margin-top: 2rem;
   background-color: lightgray;
 }
@@ -507,7 +529,7 @@ acc-h3 {
 }
 
 .form-label {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: #585858; 
@@ -554,8 +576,6 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
     padding: 10 px 20px;
     margin: 0 auto;
     border-radius: 5px;
@@ -563,9 +583,9 @@ textarea {
 
 
  .formErrors {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Krub', sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #bb1d1d;
     padding:20px;
     margin: 0 auto;
@@ -577,7 +597,7 @@ footer {
   grid-column: col-start / -1;
   grid-row: 6 / span 2;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1rem;
   line-height: 1rem;
   padding: 16px;
@@ -638,6 +658,7 @@ footer {
     cursor: pointer;  
     background-color: #7e7e7e;
   }
+
   .menu {
     position: absolute;
     height: 100vh;
@@ -664,7 +685,7 @@ footer {
   }
 
   .h2-left {
-    margin-left: 5rem;
+    margin-left: 6.5rem;
   }
 
   main {
@@ -687,13 +708,23 @@ footer {
     font-size: 1.6rem;   
   }
 
+  #project-description {
+    padding: 1rem;
+    margin: 1rem 5rem;
+  }
+
   ul, ol, .ol-num {
     padding: 1rem;
     margin: 1rem 5rem;
   }
 
+  .li-content {
+    background-color: #f5f5f5;
+    padding: 1rem;
+  }
+
   .main-form {
-    width: 40vw;
+    width: 45vw;
   }
 
 }

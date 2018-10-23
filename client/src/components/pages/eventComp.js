@@ -10,13 +10,13 @@ const EventComp = ({ event_id, event_name, event_description, event_date_time, e
     
       <ul>
         <Link className='link-txt' key={event_id} to={'/event-detailed/' + event_name} >
-          <li className='strong-txt-L'>{event_name.split('rec')[0]}</li>
+          <li className='strong-txt-M'>{event_name.split('rec')[0]}</li>
           <li className='li-content'>{event_description}</li>
-          <li className='strong-txt-L'>Date & Time</li>
+          <li className='strong-txt-M'>Date & Time</li>
           <li className='li-content'>{event_date_time}</li>
-          <li className='strong-txt-L'>Location</li>
+          <li className='strong-txt-M'>Location</li>
           <li className='li-content'>{event_location}</li>
-          <li className='strong-txt-L'>Frequency</li>
+          <li className='strong-txt-M'>Frequency</li>
           <li className='li-content'>{recurring_event_description}</li>
         </Link >
       </ul>
@@ -43,26 +43,26 @@ const SingleEvent = ({ event_id, event_name, event_description, event_date_time,
   return (
     <div key={event_id} >
   
-      <li><span className='strong-txt-L'>Title: </span>
-        {event_name}
+      <li><span className='strong-txt-M'>Title: </span>
+        <span className='li-content'>{event_name}</span>
       </li>
-      <li><span className='strong-txt-L'>Description: </span>
-        {event_description}
+      <li><span className='strong-txt-M'>Description: </span>
+      <span className='li-content'>{event_description}</span>
       </li>
-      <li><span className='strong-txt-L'>Date & Time: </span>
-        {event_date_time}
+      <li><span className='strong-txt-M'>Date & Time: </span>
+      <span className='li-content'>{event_date_time}</span>
       </li>
-      <li><span className='strong-txt-L'>Location: </span>
-        {event_location}
+      <li><span className='strong-txt-M'>Location: </span>
+      <span className='li-content'>{event_location}</span>
       </li>
-      <li><span className='strong-txt-L'>Organiser: </span>
-        {fullname_event_organiser}
+      <li><span className='strong-txt-M'>Organiser: </span>
+      <span className='li-content'>{fullname_event_organiser}</span>
       </li>
-      <li><span className='strong-txt-L'>Email: </span>
+      <li><span className='strong-txt-M'>Email: </span>
         {email_event_organiser}
       </li>
-      <li><span className='strong-txt-L'>Tel. number: </span>
-        {telephone_event_organiser}
+      <li><span className='strong-txt-M'>Tel. number: </span>
+      <span className='li-content'>{telephone_event_organiser}</span>
       </li>
         <img className='single-event-img' src={Photo[0].url}/>
    
@@ -121,7 +121,7 @@ const PastEvents = ({ pastEvents}) => {
   if(pastEvents.length !== 0){
     return (
       <React.Fragment>
-      <h2 className='h2-left'>Current Social Actions</h2>
+      <h2 className='h2-left'>Current & Past Social Actions</h2>
         {pastEvents.map( event => (
               <EventComp key={event.fields.event_id} {...event.fields} /> 
             ))} 
