@@ -42,16 +42,30 @@ const SingleEvent = ({ event_id, event_name, event_description, event_date_time,
     if(Photo){
   return (
     <div key={event_id} >
-      <li>
+  
+      <li><span className='strong-txt-L'>Title: </span>
         {event_name}
+      </li>
+      <li><span className='strong-txt-L'>Description: </span>
         {event_description}
+      </li>
+      <li><span className='strong-txt-L'>Date & Time: </span>
         {event_date_time}
+      </li>
+      <li><span className='strong-txt-L'>Location: </span>
         {event_location}
+      </li>
+      <li><span className='strong-txt-L'>Organiser: </span>
         {fullname_event_organiser}
+      </li>
+      <li><span className='strong-txt-L'>Email: </span>
         {email_event_organiser}
+      </li>
+      <li><span className='strong-txt-L'>Tel. number: </span>
         {telephone_event_organiser}
       </li>
-      <img className='single-event-img' src={Photo[0].url}/>
+        <img className='single-event-img' src={Photo[0].url}/>
+   
     </div>
   )
 }
