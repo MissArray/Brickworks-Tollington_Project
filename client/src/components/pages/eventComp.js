@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { fork } from "child_process";
 
 const EventComp = ({ event_id, event_name, event_description, event_date_time, event_location, fullname_event_organiser, 
   email_event_organiser, telephone_event_organiser, recurring_event_description}) => {
   
 
   return (
-
     
       <ul>
         <Link className='link-txt' key={event_id} to={'/event-detailed/' + event_name} >
@@ -90,7 +90,7 @@ const UpcomingEvents = ({ allEvents}) => {
   if(allEvents.length !== 0){
     return (
       <React.Fragment>
-        <h2 className='h2-left'>Current Social Actions</h2>
+        <h2>Current Social Actions</h2>
         {allEvents.map( event => (
             <EventComp key={event.fields.event_id} {...event.fields} /> 
           ))} 
@@ -101,11 +101,13 @@ const UpcomingEvents = ({ allEvents}) => {
   }
 }
 
+// NB LINK TO AIRTABLE NOT FUNCTIONAL IN FORK; UPCOMING EVENTS NOT LOADING, SO h2 BELOW CHANGED HERE TO Current Social Actions
+
 const PastEvents = ({ pastEvents}) => {
   if(pastEvents.length !== 0){
     return (
       <React.Fragment>
-      <h2 className='h2-left'>Past Social Actions</h2>
+      <h2 className='h2-left'>Current Social Actions</h2>
         {pastEvents.map( event => (
               <EventComp key={event.fields.event_id} {...event.fields} /> 
             ))} 

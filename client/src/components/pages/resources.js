@@ -2,12 +2,14 @@ import React from 'react';
  
 const Resources = () => (
     <div className='wrapper'>
-        <h1 data-testid="resources-page">Resources</h1> 
+        <h1 data-testid="resources-page">Resources</h1>
+        <div id='sidebar'></div>
             <main>
-            <p className='strong-txt'>Engaging in social action takes time, energy and passion.
+            <p className='strong-txt-L'>Engaging in social action takes time, energy and passion.
             <br/>
-            Here are our top 10 tips to get you started.</p>
-           <ol>
+            Here are our <span className='bold-txt'>top 10 tips</span> to get you started.</p>
+
+           <ol className='ol-num'>
                <li>
                Identify a problem, challenge or issue in your neighbourhood and be specific about what you want to tackle.
                </li>
@@ -38,14 +40,19 @@ const Resources = () => (
                 <li>Don't give up, have patience and be committed.</li>
            </ol>
            
-          <p className='options-message'>Here are some useful links to get you started:</p>
+          <p className='strong-txt-M'>Useful links</p>
 
-                <div className='resource-links'> 
-                    <a className='resource-link' href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/591797/A_description_of_social_action.pdf">A description of social action</a>
-                    <br/><br/>
+                <div className='container-M'> 
+                <span className='strong-txt-M'>&#8226; Social action explained: &nbsp;
+                    <a className='resource-link' href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/591797/A_description_of_social_action.pdf">A description of Social Action</a>
+                    </span>
+                    <br/>
+                <span className='strong-txt-M'>&#8226; How to lead social action: &nbsp;
                     <a className='resource-link' href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/591799/Leadership_and_culture_change_to_enable_social_action.pdf'>Leadership and culture change</a>
-                    <br/><br/>
+                   </span>
+                <span className='strong-txt-M'>&#8226; How to carry out a social action: &nbsp;
                     <a className='resource-link' href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/591805/Enabling_social_action_methodology.pdf'>Methodology</a>
+                </span>
                 </div>
         
             </main>
