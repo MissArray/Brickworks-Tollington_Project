@@ -58,7 +58,7 @@ body {
 
 .image {
   position: absolute;
-  width: 12vw;   
+  width: 9vw;   
   margin-right: 10px;  
   padding: 15px;  
   cursor: pointer;  
@@ -129,7 +129,7 @@ body {
 .menu {
   position: absolute;
   height: 100vh;
-  width: 40vw;
+  width: 60vw;
   background-color: #7E7E7E;
   transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
   overflow-y: auto;
@@ -140,7 +140,7 @@ body {
 }
 
 .menu-closed {
-  transform: translate3d(-42.5vw, 0, 0);
+  transform: translate3d(-65vw, 0, 0);
 }
 
 .menu-open {
@@ -192,7 +192,7 @@ main {
   grid-row: 2 / span 3;
   align-items: center;
   justify-items: center;
-  padding: 1rem;
+  margin: 1rem;
   }
 
 #sidebar {
@@ -221,6 +221,10 @@ main {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    color: #2a2a2a;
+    font-weight: normal;
   }
 
   #top-ten-options {
@@ -463,8 +467,7 @@ acc-h3 {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  min-width: 40vw;
-  max-width: 90vw;
+  width: 75vmin;
   justify-content: center;
   padding-bottom: 20px;
 }
@@ -495,8 +498,7 @@ acc-h3 {
 
 form > input {
   height: 2rem;
-  min-width: 40vw;
-  max-width: 90vw;
+  width: 75vmin;
   margin-bottom: 2rem;
   border-radius: 5px;
   background-color: #eeeeee;
@@ -565,6 +567,14 @@ footer {
   background-color: #7e7e7e;
   }
 
+  /*IMAGES*/
+
+  .content-image {
+    width: 60vmax;
+    box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
+
+  }
+
 /*----------------------------------------------*/
 
 /*MEDIA QUERIES*/
@@ -609,6 +619,11 @@ footer {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 1rem;
   }
 
   #sidebar {
