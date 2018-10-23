@@ -118,7 +118,7 @@ console.log('BEFORE SWITCH', this.state.nameValid);
           <p className='strong-txt-M'>Please click on the options that apply</p>
 
           <div className='checkbox-choices'>
-            <span className='running-txt-M'>&#8226; I want to connect with a local Community Organiser</span>
+            <span className='running-txt'>&#8226; I want to connect with a local Community Organiser</span>
               <label className="label-checkbox" htmlFor="cntWithCommunityAdviser">
                 <input className='checkbox'
                   type="checkbox"
@@ -131,7 +131,7 @@ console.log('BEFORE SWITCH', this.state.nameValid);
           </div>
             <br/>
           <div className="checkbox-choices">
-            <span className='running-txt-M'>&#8226; I want to train as a Community Organiser
+            <span className='running-txt'>&#8226; I want to train as a Community Organiser
             </span>
               <label className="label-checkbox" htmlFor="trainCommunityAdviser">
                 <input className='checkbox'

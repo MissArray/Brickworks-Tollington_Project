@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const TopTen= () => (
     <div data-testid="topten-page" className='wrapper'>
-        <h1>Top Ten Tips</h1>
+        <h1>Start a Social Action</h1>
         <div id='sidebar'></div>
         <main>
             
         <p className='strong-txt-L'>Engaging in social action takes time, energy and passion.
             <br/>
-            Here are our top 10 tips to get you started.</p>
+            Here are our <span className='bold-txt'>top 10 tips</span> to get you started.</p>
            <ol className='ol-num'>
                <li>
                Identify a problem, challenge or issue in your neighbourhood and be specific about what you want to tackle.
