@@ -39,6 +39,8 @@ body {
 
 .nav {
   position: absolute;
+  position: absolute;
+  top: 1rem;
   margin: 0 25 0 5px;
 }
 
@@ -46,27 +48,27 @@ body {
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 1rem;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.4rem;
   border-bottom: 1px solid whitesmoke;
 }
 
 .image {
-    position: absolute;
-    width: 6vw;
-    height: 6vh;
-    margin-right: 10px;
-    padding-top: 20px;
-    cursor: pointer;
+  position: absolute;
+  width: 12vw;   
+  margin-right: 10px;  
+  padding: 15px;  
+  cursor: pointer;  
+  background-color: #7e7e7e;
 }
 
 .image span {
     margin: 0 auto;
     position: relative;
-    top: 12px;
+    top: 0.5rem;
 }
 
 .image span:before, .image span:after {
@@ -155,7 +157,7 @@ body {
   color: #fafafa;
   text-align: center;
   font-family: 'Nunito', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 3rem;
   margin-top: 0.5rem;
@@ -198,7 +200,7 @@ main {
   grid-row: 2 / 7;
   width: 0.01vw;
   background-color:#efefef;
-}
+  }
 
 
   /*TEXT CONTAINERS*/
@@ -572,9 +574,18 @@ footer {
  
   .nav {
     position: absolute;
-    top: 1.25em;
+    top: 1rem;
   }
 
+  .image {
+    position: absolute;
+    width: 12vw;  
+    height: 2.8rem;  
+    margin-right: 10px;  
+    padding-top: 20px;  
+    cursor: pointer;  
+    background-color: #7e7e7e;
+  }
   .menu {
     position: absolute;
     height: 100vh;
@@ -585,7 +596,7 @@ footer {
   }
 
   h1 {
-      grid-column: col-start / -1;
+      grid-column: 2 / -1;
       grid-row: 1 / 2;
       height: 5rem;
       font-size: 2.5rem;
@@ -604,13 +615,14 @@ footer {
     grid-column: col-start / span 1;
     grid-row: 2 / 7;
     width: 10vw;
-  }
+    margin: 5px 0px 5px 5px;
+    }
 
   #hub-description {    
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
     font-size: 1.6rem;   
   }
 
