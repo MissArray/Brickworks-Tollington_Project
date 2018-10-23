@@ -45,7 +45,7 @@ toggleMenu = () => {
         <Link className='nav-link' data-testid="faq" onClick={this.toggleMenu} to='/faq'>FAQ</Link>
       </label>
       <label htmlFor="inspirations">
-        <Link className='nav-link' data-testid="inspirations" onClick={this.toggleMenu} to='/inspirations'>Local Inspirational Stories</Link>
+        <Link className='nav-link' data-testid="inspirations" onClick={this.toggleMenu} to='/inspirations'>Inspirational Stories</Link>
       </label>
       <label htmlFor="resources">
         <Link className='nav-link' data-testid="resources" onClick={this.toggleMenu} to='/resources'>Resources & Tips</Link>

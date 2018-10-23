@@ -55,7 +55,7 @@ import App from '../App';
     fireEvent.click(menu);
     //click about link
     fireEvent.click(getByTestId('inspirations'))
-    expect(getByTestId('inspirations-page').firstChild.textContent).toBe('Local Inspirational Stories')
+    expect(getByTestId('inspirations-page').firstChild.textContent).toBe('Inspirational Stories')
   })
 
   test('able to reach faqs page', () => {

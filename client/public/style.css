@@ -5,8 +5,8 @@ body {
   background-image: url('./images/Brickworks-bacgkround.jpeg');
   background-size: cover; 
   background-color: #FAFAFA;
-  padding-left: 1.6vw;
-  padding-right: 1.6vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 #logo {
@@ -27,8 +27,8 @@ body {
   grid-column-gap: 4px;
   grid-row-gap: 8px;
   grid-column: col-start / span 12;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0.1vw;
+  margin-right: 0.1vw;
   background-color: #FAFAFA;
   min-height: 80vh;
   }
@@ -60,7 +60,7 @@ body {
   position: absolute;
   width: 9vw;   
   margin-right: 10px;  
-  padding: 15px;  
+  padding: 15px 5px;  
   cursor: pointer;  
   background-color: #7e7e7e;
 }
@@ -473,9 +473,9 @@ acc-h3 {
 .button-large {
   margin: 0 auto;
   font-family: 'Krub', sans-serif;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.06rem;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #2a2a2a;
   background-color: #92d8d8;
   padding: 10px 20px;
@@ -643,6 +643,15 @@ footer {
 
 @media screen and (min-width: 500px) and (orientation: landscape) {
 
+  body {
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+  }
+
+  .wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
  
   .nav {
     position: absolute;
@@ -654,6 +663,7 @@ footer {
     width: 12vw; 
     height: 2.3rem;
     padding-top: 28px; 
+    margin-left: auto;
     margin-right: 10px;      
     cursor: pointer;  
     background-color: #7e7e7e;
@@ -727,5 +737,11 @@ footer {
     width: 45vw;
   }
 
+  .button-large {
+    letter-spacing: 0.04rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+
 }
 
+}

@@ -4,7 +4,7 @@ class Inspiration extends React.Component {
     render(){
         return(
     <div data-testid="inspirations-page" className='wrapper'>
-    <h1>Local Inspirational Stories</h1>
+    <h1>Inspirational Stories</h1>
     <div id='sidebar'></div>
         <main>
             <ul>
