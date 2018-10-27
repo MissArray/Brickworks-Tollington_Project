@@ -1,5 +1,8 @@
 import React from 'react';
-import logoImg from '../../../public/images/Brickworks-logo1.png'; 
+import logoImg from '../../../public/images/Brickworks-logo1.png'
+import fbLogo from '../../../public/images/facebook-logo.png'
+import twitterLogo from '../../../public/images/twitter-logo.png'
+import emailSymbol from '../../../public/images/email-symbol.png'
 
 class Home extends React.Component {
   
@@ -21,7 +24,13 @@ class Home extends React.Component {
         
         <div className='wrapper'>
           <h1>Brickworks - Home</h1>
-          <div id='sidebar'></div>
+          <div id='sidebar'>
+          {/* <div id='social-media-logos'> */}
+            <img id='fb-logo' src={fbLogo} alt='Facebook logo' />
+            <img id='twitter-logo' src={twitterLogo} alt='Twitter logo' />
+            <img id='email-symbol' src={emailSymbol} alt='Email symbol' />
+          {/* </div> */}
+          </div>
           <main>
             <div id='logo'>
               <img id='logo-img' src={logoImg} alt='Brickworks logo'/>
