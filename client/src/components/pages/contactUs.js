@@ -1,5 +1,8 @@
 import React from 'react';
 import {FormErrors} from './eventComp';
+import fbLogo from '../../../public/images/facebook-logo.svg';
+import twitterLogo from '../../../public/images/twitter-logo.svg';
+import emailSymbol from '../../../public/images/email-symbol.svg';
 
 class ContactUs extends React.Component {
   state = {
@@ -97,7 +100,20 @@ console.log('BEFORE SWITCH', this.state.nameValid);
     return (
     <div className='wrapper'>
     <h1>Contact Us</h1>
-    <div id='sidebar'></div>
+
+   <div id='sidebar'>
+        <div id='logo-container'>
+          <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
+          </a>
+          <a href='https://twitter.com/HanleyCrouch' target='_blank'>
+          <img src={twitterLogo} id='twitter-logo-img' alt='Twitter logo' />
+          </a>
+          <a href='mailto:brickworks.web.app@gmail.com'  target='_blank'>
+          <img src={emailSymbol} id='email-symbol-img' alt='Email symbol' />
+          </a>
+        </div>
+    </div>
+
     <main>
       <br/>
     <p className='strong-txt-M'>Please note that <span className='italicised'>Name</span>, <span className='italicised'>Email</span> and <span className='italicised'>Description</span> are required fields</p>

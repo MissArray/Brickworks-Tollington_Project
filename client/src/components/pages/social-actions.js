@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import getAllEvents from '../utils/utilsgetAllEvent';
 import getPastEvents from '../utils/utilsgetPastEvent';
 import {EventComp, UpcomingEvents, PastEvents} from './eventComp';
+import fbLogo from '../../../public/images/facebook-logo.svg';
+import twitterLogo from '../../../public/images/twitter-logo.svg';
+import emailSymbol from '../../../public/images/email-symbol.svg';
 
 class SocialActions extends React.Component {
   
@@ -45,7 +48,8 @@ state = {
     if (this.state.allEvntLoading || this.state.pastEvntLoading) {
       return (
         <div className='wrapper'>
-        <h1 data-testid="social-actions-page">Social Actions</h1>
+        <h1 data-testid="social-actions-page">Social Actions</h1>     
+      
         <main>
         <h3>loading...</h3>
         </main>
@@ -61,7 +65,7 @@ state = {
       
     <div className='wrapper'>
         <h1 data-testid="social-actions-page">Social Actions</h1>
-        <div id='sidebar'></div>    
+          
       
       <main>
         <div>

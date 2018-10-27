@@ -205,10 +205,11 @@ main {
   }
 
 #sidebar {
-  grid-column: col-start / span 1;
-  grid-row: 2 / 7;
-  width: 0.01vw;
-  background-color:#efefef;
+  grid-column: col-start / -1;
+  grid-row: 5 / span 1;
+  background-color:#FAFAFA;
+  margin: 0px 0px 2px 0px;
+  padding: 4px;
   }
 
 #resources-container {
@@ -549,11 +550,19 @@ footer {
     box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
   }
   
-  #fb-logo, #twitter-logo,  #email-symbol {
-    width: 0px;
-    height: 0px;
+  #fb-logo-img, #twitter-logo-img, #email-symbol-img {
+    height: 20px;
+    margin: 0 auto;
+    padding: 2px 30px;
   }
-
+  
+  #logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  
 /*----------------------------------------------*/
 
 /*MEDIA QUERIES*/
@@ -615,10 +624,12 @@ footer {
     grid-row: 2 / 7;
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    align-content: center;
     justify-content: center;
     width: 10vw;
     margin: 5px 0px 5px 5px;
+    background-color:#efefef;
+    
     }
 
   #hub-description {    
@@ -667,25 +678,20 @@ footer {
   background-color: #7e7e7e;
 }
 
-#fb-logo {
-  width: 70px;
-  height: auto;
-  margin: 0 auto;
-  padding: 30px;
+#logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#twitter-logo {
+#fb-logo-img, #twitter-logo-img, #email-symbol-img {
   width: 70px;
   height: auto;
   margin: 0 auto;
-  padding: 30px;
+  padding: 40px 30px;
 }
 
-#email-symbol {
-  width: 70px;
-  height: auto;
-  margin: 0 auto;
-  padding: 30px;
-}
+
+
 
 }

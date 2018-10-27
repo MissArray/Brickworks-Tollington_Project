@@ -1,4 +1,7 @@
 import React from 'react';
+import fbLogo from '../../../public/images/facebook-logo.svg'
+import twitterLogo from '../../../public/images/twitter-logo.svg'
+import emailSymbol from '../../../public/images/email-symbol.svg'
 
 
 class Faq extends React.Component {
@@ -7,7 +10,18 @@ class Faq extends React.Component {
     <div>
         <div data-testid = "faq-page" className='wrapper'>
         <h1 className='pageHeadings'>FAQ</h1>
-        <div id='sidebar'></div>
+        <div id='sidebar'>
+            <div id='logo-container'>
+                <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
+                </a>
+                <a href='https://twitter.com/HanleyCrouch' target='_blank'>
+                <img src={twitterLogo} id='twitter-logo-img' alt='Twitter logo' />
+                </a>
+                <a href='mailto:brickworks.web.app@gmail.com'  target='_blank'>
+                <img src={emailSymbol} id='email-symbol-img' alt='Email symbol' />
+                </a>
+            </div>
+        </div>
         <main>
             <ul>
                     <li><p className='li-p-strong'>&#8226; &ensp; How does Brickworks connect me with others who can help me develop my idea for a social action?</p>

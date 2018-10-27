@@ -1,8 +1,8 @@
 import React from 'react';
 import logoImg from '../../../public/images/Brickworks-logo1.png'
-import fbLogo from '../../../public/images/facebook-logo.png'
-import twitterLogo from '../../../public/images/twitter-logo.png'
-import emailSymbol from '../../../public/images/email-symbol.png'
+import fbLogo from '../../../public/images/facebook-logo.svg'
+import twitterLogo from '../../../public/images/twitter-logo.svg'
+import emailSymbol from '../../../public/images/email-symbol.svg'
 
 class Home extends React.Component {
   
@@ -25,11 +25,16 @@ class Home extends React.Component {
         <div className='wrapper'>
           <h1>Brickworks - Home</h1>
           <div id='sidebar'>
-          {/* <div id='social-media-logos'> */}
-            <img id='fb-logo' src={fbLogo} alt='Facebook logo' />
-            <img id='twitter-logo' src={twitterLogo} alt='Twitter logo' />
-            <img id='email-symbol' src={emailSymbol} alt='Email symbol' />
-          {/* </div> */}
+            <div id='logo-container'>
+                <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
+                </a>
+                <a href='https://twitter.com/HanleyCrouch' target='_blank'>
+                <img src={twitterLogo} id='twitter-logo-img' alt='Twitter logo' />
+                </a>
+                <a href='mailto:brickworks.web.app@gmail.com'  target='_blank'>
+                <img src={emailSymbol} id='email-symbol-img' alt='Email symbol' />
+                </a>
+            </div>
           </div>
           <main>
             <div id='logo'>

@@ -1,11 +1,25 @@
 import React from 'react';
+import fbLogo from '../../../public/images/facebook-logo.svg'
+import twitterLogo from '../../../public/images/twitter-logo.svg'
+import emailSymbol from '../../../public/images/email-symbol.svg'
 
 class Inspiration extends React.Component {
     render(){
         return(
     <div data-testid="inspirations-page" className='wrapper'>
-    <h1>Inspirational Stories</h1>
-    <div id='sidebar'></div>
+    <h1>Inspirational Stories</h1>    
+        <div id='sidebar'>
+            <div id='logo-container'>
+                <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
+                </a>
+                <a href='https://twitter.com/HanleyCrouch' target='_blank'>
+                <img src={twitterLogo} id='twitter-logo-img' alt='Twitter logo' />
+                </a>
+                <a href='mailto:brickworks.web.app@gmail.com'  target='_blank'>
+                <img src={emailSymbol} id='email-symbol-img' alt='Email symbol' />
+                </a>
+            </div>
+        </div>
         <main>
             <ul>
                 <li>
