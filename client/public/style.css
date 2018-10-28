@@ -380,7 +380,7 @@ li, .li-content {
   margin-left: 0.8rem;
   margin-right: 0.8rem;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0;
 }
 
 
@@ -533,20 +533,19 @@ footer {
   .img-container {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1rem 0;
   }
 
-  .single-event-container {
+  #single-event-container {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0 auto;
     justify-content: center;
   }
 
-
   .single-event-img {
     margin: 0 auto;
-    width: 50vw;
+    width: 60vw;
     box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
   }
   
@@ -594,6 +593,8 @@ footer {
     padding-top: 4rem;
   }
 
+  /*HEADINGS - LARGE SCREENS*/
+
   h1 {
       grid-column: 2 / -1;
       grid-row: 1 / 2;
@@ -633,6 +634,8 @@ footer {
     background-color:#efefef;    
     }
 
+/*TEXT CONTAINERS - LARGE SCREEN*/
+
   #hub-description {    
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -641,7 +644,13 @@ footer {
     font-size: 1.6rem;   
   }
 
-  #project-description, .single-event-container {
+  #project-description {
+    padding: 1rem;
+    margin: 1rem 5rem;
+  }
+
+  #single-event-container {
+    min-height: 70vh;
     padding: 1rem;
     margin: 1rem 5rem;
   }
@@ -680,6 +689,8 @@ footer {
     margin-left: 0.5rem;
   }
 
+  /*FORM - LARGE SCREENS*/
+
   .main-form {
     width: 45vw;
   }
@@ -703,9 +714,15 @@ footer {
   background-color: #7e7e7e;
 }
 
-.single-event-img {
+.img-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+}
+
+.single-event-img, .content-image {
   margin: 0 auto;
-  width: 60vw;
+  width: 50vw;
 }
 
 #logo-container {
