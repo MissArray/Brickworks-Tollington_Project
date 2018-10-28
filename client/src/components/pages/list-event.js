@@ -147,7 +147,7 @@ console.log('BEFORE SWITCH', this.state.nameValid);
         <div className='container-M'>
           <p className='strong-txt-M'>Please click on the options that apply</p>
         <div className='checkbox-choices'>
-          <span className='running-txt-M'>&#8226; I would like to book space for my social action</span>
+          <span className='running-txt'>&#8226; I would like to book space for my social action</span>
         <label className='label-checkbox' htmlFor="hireSpace">
         <input className='checkbox'
           type="checkbox"
@@ -160,7 +160,7 @@ console.log('BEFORE SWITCH', this.state.nameValid);
 
        
         <div className="checkbox-choices">
-          <span className='running-txt-M'>&#8226; I would like you to list my social action</span>
+          <span className='running-txt'>&#8226; I would like you to list my social action</span>
         <label className="label-checkbox" htmlFor="listEvent">
         <input className='checkbox'
           type="checkbox"

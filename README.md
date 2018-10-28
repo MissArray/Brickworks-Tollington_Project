@@ -66,6 +66,10 @@ https://brickworks-social-action.herokuapp.com/
 `npm run parcel: build`
 `npm run dev`
 
+## View the project locally
+In your browser, type:
+`localhost:5000`
+
 ## Screenshots of the locally run fork
 See issue [#1](https://github.com/MissArray/Brickworks_First/issues/1#issue-373229149)
 

@@ -11,8 +11,7 @@
 
 ## Fonts
 
-* h1: 1.6rem
-* h2: 
+* Google fonts: Krub (loading time: moderate) 
 
 ## Symbols & special characters
 
