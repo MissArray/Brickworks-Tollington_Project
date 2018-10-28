@@ -741,5 +741,8 @@ footer {
   padding: 45px 30px;
 }
 
+footer {
+  padding: 16px 16px 16px 10vw;
+}
 
 }
