@@ -1,8 +1,8 @@
 import React from 'react';
-import logoImg from '../../../public/images/Brickworks-logo1.png'
-import fbLogo from '../../../public/images/facebook-logo.svg'
-import twitterLogo from '../../../public/images/twitter-logo.svg'
-import emailSymbol from '../../../public/images/email-symbol.svg'
+import logoImg from '../../../public/images/Brickworks-logo1.png';
+import fbLogo from '../../../public/images/facebook-logo.svg';
+import twitterLogo from '../../../public/images/twitter-logo.svg';
+import emailSymbol from '../../../public/images/email-symbol.svg';
 
 class Home extends React.Component {
   

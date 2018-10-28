@@ -1,7 +1,7 @@
 import React from 'react';
-import fbLogo from '../../../public/images/facebook-logo.svg'
-import twitterLogo from '../../../public/images/twitter-logo.svg'
-import emailSymbol from '../../../public/images/email-symbol.svg'
+import fbLogo from '../../../public/images/facebook-logo.svg';
+import twitterLogo from '../../../public/images/twitter-logo.svg';
+import emailSymbol from '../../../public/images/email-symbol.svg';
 
 class Inspiration extends React.Component {
     render(){

@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-// import fbLogo from '../../../public/images/facebook-logo.svg'
-// import twitterLogo from '../../../public/images/twitter-logo.svg'
-// import emailSymbol from '../../../public/images/email-symbol.svg'
+import fbLogo from '../../../public/images/facebook-logo.svg';
+import twitterLogo from '../../../public/images/twitter-logo.svg';
+import emailSymbol from '../../../public/images/email-symbol.svg';
 
 
 const TopTen= () => (
+
     <div data-testid="topten-page" className='wrapper'>
         <h1>Start a Social Action</h1>
        
-        {/* <div id='sidebar'>
+        <div id='sidebar'>
             <div id='logo-container'>
                 <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
                 </a>
@@ -21,13 +22,14 @@ const TopTen= () => (
                 </a>
             </div>
         </div>
-         */}
-        <main>
-            
+
+        <main>   
+                 
         <p className='strong-txt-L'>Engaging in social action takes time, energy and passion.
             <br/>
-            Here are our <span className='bold-txt'>top 10 tips</span> to get you started.</p>
-           <ol className='ol-num'>
+        Here are our <span className='bold-txt'>top 10 tips</span> to get you started.
+        </p>
+           <ol id='ol-num'>
                <li>
                Identify a problem, challenge or issue in your neighbourhood and be specific about what you want to tackle.
                </li>

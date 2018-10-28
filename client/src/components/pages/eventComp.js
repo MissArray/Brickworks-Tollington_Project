@@ -8,10 +8,10 @@ const EventComp = ({ event_id, event_name, event_description, event_date_time, e
 
   return (
     
-      <ul>
+      <ul className='ul-single-event'>
         <Link className='link-txt' key={event_id} to={'/event-detailed/' + event_name} >
           <li className='strong-txt-M'>{event_name.split('rec')[0]}</li>
-          <li className='li-content'>{event_description}</li>
+          <li className='li-content' id='event-desc-long'>{event_description}</li>
           <li className='strong-txt-M'>Date & Time</li>
           <li className='li-content'>{event_date_time}</li>
           <li className='strong-txt-M'>Location</li>
@@ -26,7 +26,7 @@ const EventComp = ({ event_id, event_name, event_description, event_date_time, e
 
 const EventByThemeComp = ({ event_id, event_name, event_description, date_time, event_location, theme }) => {
   return (
-    <ul>
+    <ul >
       <li>{event_id}</li>
       <li>{event_name}</li>
       <li>{event_description}</li>
@@ -44,7 +44,7 @@ const SingleEvent = ({ event_id, event_name, event_description, event_date_time,
     <div key={event_id} >
   
       <li><span className='strong-txt-M'>Title: </span>
-        <span className='li-content'>{event_name}</span>
+      <span className='li-content'>{event_name}</span>
       </li>
       <li><span className='strong-txt-M'>Description: </span>
       <span className='li-content'>{event_description}</span>
@@ -64,23 +64,39 @@ const SingleEvent = ({ event_id, event_name, event_description, event_date_time,
       <li><span className='strong-txt-M'>Tel. number: </span>
       <span className='li-content'>{telephone_event_organiser}</span>
       </li>
-        <img className='single-event-img' src={Photo[0].url}/>
-   
+        <div className='img-container'>
+          <img className='single-event-img' src={Photo[0].url}/>
+        </div>
     </div>
   )
 }
 else {
   return(
     <div key={event_id} >
-    <li>
-      {event_name}
-      {event_description}
-      {event_date_time}
-      {event_location}
-      {fullname_event_organiser}
-      {email_event_organiser}
-      {telephone_event_organiser}
-    </li>
+
+    <li><span className='strong-txt-M'>Title: </span>
+      <span className='li-content'>{event_name}</span>
+      </li>
+      <li><span className='strong-txt-M'>Description: </span>
+      <span className='li-content'>{event_description}</span>
+      </li>
+      <li><span className='strong-txt-M'>Date & Time: </span>
+      <span className='li-content'>{event_date_time}</span>
+      </li>
+      <li><span className='strong-txt-M'>Location: </span>
+      <span className='li-content'>{event_location}</span>
+      </li>
+      <li><span className='strong-txt-M'>Organiser: </span>
+      <span className='li-content'>{fullname_event_organiser}</span>
+      </li>
+      <li><span className='strong-txt-M'>Email: </span>
+        {email_event_organiser}
+      </li>
+      <li><span className='strong-txt-M'>Tel. number: </span>
+      <span className='li-content'>{telephone_event_organiser}</span>
+      </li>
+
+    
     
   </div>
 

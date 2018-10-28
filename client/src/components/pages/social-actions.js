@@ -50,6 +50,19 @@ state = {
         <div className='wrapper'>
         <h1 data-testid="social-actions-page">Social Actions</h1>     
       
+        <div id='sidebar'>
+        <div id='logo-container'>
+            <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
+            </a>
+            <a href='https://twitter.com/HanleyCrouch' target='_blank'>
+            <img src={twitterLogo} id='twitter-logo-img' alt='Twitter logo' />
+            </a>
+            <a href='mailto:brickworks.web.app@gmail.com'  target='_blank'>
+            <img src={emailSymbol} id='email-symbol-img' alt='Email symbol' />
+            </a>
+        </div>
+      </div>
+
         <main>
         <h3>loading...</h3>
         </main>
@@ -66,6 +79,18 @@ state = {
     <div className='wrapper'>
         <h1 data-testid="social-actions-page">Social Actions</h1>
           
+      <div id='sidebar'>
+        <div id='logo-container'>
+            <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
+            </a>
+            <a href='https://twitter.com/HanleyCrouch' target='_blank'>
+            <img src={twitterLogo} id='twitter-logo-img' alt='Twitter logo' />
+            </a>
+            <a href='mailto:brickworks.web.app@gmail.com'  target='_blank'>
+            <img src={emailSymbol} id='email-symbol-img' alt='Email symbol' />
+            </a>
+        </div>
+      </div>
       
       <main>
         <div>

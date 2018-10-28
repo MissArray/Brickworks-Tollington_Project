@@ -1,14 +1,15 @@
 import React from 'react';
 import BikeImg from '../../../public/images/bike.jpg';
-import fbLogo from '../../../public/images/facebook-logo.svg'
-import twitterLogo from '../../../public/images/twitter-logo.svg'
-import emailSymbol from '../../../public/images/email-symbol.svg'
+import fbLogo from '../../../public/images/facebook-logo.svg';
+import twitterLogo from '../../../public/images/twitter-logo.svg';
+import emailSymbol from '../../../public/images/email-symbol.svg';
 
 
 const Projects = () => 
 // return(    
     <div className='wrapper'>    
     <h1 data-testid="projects-page">Projects</h1>
+
     <div id='sidebar'>
         <div id='logo-container'>
             <a href='https://www.facebook.com/hanleycrouch/' target='_blank'><img src={fbLogo} id='fb-logo-img' alt='Facebook logo' />
@@ -20,7 +21,8 @@ const Projects = () =>
             <img src={emailSymbol} id='email-symbol-img' alt='Email symbol' />
             </a>
         </div>
-        </div>
+    </div>
+
     <main>     
         <h2>Bike Workshops</h2>        
         <p id='project-description' className='container-M'>Brickworks Social Action Hub is making a difference to the lives of local young people by helping them learn new skills and build relationships with local police through bicycle maintenance sessions.
