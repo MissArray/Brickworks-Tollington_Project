@@ -19,7 +19,7 @@ const Resources = () => (
               </div>
             </div>
             <main>
-            <p className='strong-txt-L'>Engaging in social action takes time, energy and passion.
+            <p className='strong-txt-L' id='top-10-top1'>Engaging in social action takes time, energy and passion.
             <br/>
             Here are our <span className='bold-txt'>top 10 tips</span> to get you started.</p>
 

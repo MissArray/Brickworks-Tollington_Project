@@ -30,7 +30,7 @@ class Inspiration extends React.Component {
                 <label htmlFor='item1'>
                 <h2> Building a community: The story of Brickworks<span></span></h2>
                 </label>
-                <p className='li-content'>
+                <div className='li-content'>
                     The Hanley Crouch Community Association (HCCA) has strong roots in social action and this culture of 'making a difference through social change' remains at our core - stimulating connectivity across our local community and feeding our sustainability. 
                     <br></br>
                     <br></br>
@@ -50,14 +50,14 @@ class Inspiration extends React.Component {
                     <div className='img-container'>
                         <img id='insp-Brickworks-2' className='single-event-img' src={inspBricks2} alt='sketched ideas for Brickworks' />
                         </div> 
-                </p>
+                </div>
                 </li>
 
                 <li>
                 <label htmlFor='item2'>
                 <h2>The 'locality' initiative in Tollington<span></span></h2>
                 </label>
-                <p className='li-content'>
+                <div className='li-content'>
                 Islington Council has chosen the ward of Tollington to explore and develop a 'Locality' initiative that aims to develop, define, and test the 'community' aspect of the Homes and Communities offer. A team of 11 staff from Homes and Communities and key local partner are engaging and collaborating to ensure that Homes and Communities are connected to and knowledgeable about the communities that they work in.
                 <br/>
                 <br/>
@@ -66,7 +66,7 @@ class Inspiration extends React.Component {
                         </div> 
                 <br/>
                 The first phase of 'Locality' has focused on Insights and Data Gathering, which has revealed some interesting facts and statistics and this combined with the engagement of local organisations, businesses and residents has identified some key areas of concerns linked to poverty, isolation and health and well-being, which are now the key focus for collective social action with Brickworks being developed, supported and promoted as the heart of the community.
-                </p>
+                </div>
                 </li>
             </ul>
         </main>
