@@ -55,6 +55,11 @@ body {
   padding-bottom: 1.4rem;
 }
 
+.nav-link:first-child {
+  padding-top: 0.7rem;
+}
+
+
 .image {
   position: absolute;
   width: 8vw;   
@@ -128,18 +133,20 @@ body {
 
 .menu {
   position: absolute;
-  height: 100vh;
+  height: fit-content;
   width: 70vw;
   background-color: #7E7E7E;
   transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
   overflow-y: auto;
   padding-top: 4rem;
+  padding-bottom: 1rem;
   border-right-style: solid;
   border-right-width: 3px;
   border-right-color: whitesmoke;
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-bottom-color: whitesmoke;
+  box-shadow: 4px 4px 4px rgba(156, 142, 135, 0.541);
 }
 
 .menu-closed {
@@ -593,7 +600,7 @@ footer {
 
   .menu {
     position: absolute;
-    height: 100vh;
+    height: fit-content;
     width: 23vw;
     transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
     overflow-y: auto;
