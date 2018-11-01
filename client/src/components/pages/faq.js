@@ -23,7 +23,7 @@ class Faq extends React.Component {
             </div>
         </div>
         <main>
-            <br/>
+           <p></p>
             <ul>
                     <li><span className='li-p-strong'>&#8226; &ensp; How does Brickworks connect me with others who can help me develop my idea for a social action?</span>
                 <span className='li-content'>We have 20 trained Community Organisers who can help you develop your idea, build connections with local people, and find others who are interested in the same social action idea as you.</span></li>

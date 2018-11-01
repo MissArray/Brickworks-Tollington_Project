@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
   background-color: #FAFAFA;
   max-width: 40vw;
+  padding-top: 1rem;
 }
 
 #logo-img {
@@ -59,7 +60,6 @@ body {
   padding-top: 0.7rem;
 }
 
-
 .image {
   position: absolute;
   width: 8vw;   
@@ -72,7 +72,8 @@ body {
 .image span {
     margin: 0 auto;
     position: relative;
-    top: 0.5rem;
+    top: 0.4rem;
+    transition: transform 1s ease;
 }
 
 .image span:before, .image span:after {
@@ -81,14 +82,10 @@ body {
 }
 
 .image span, .image span:before, .image span:after {
-    width: 31px;
-    height: 6px;
+    width: 30px;
+    height: 5px;
     background-color: whitesmoke;
     display: block;
-}
-
-.image span {
-  transition: transform 1s ease;
 }
 
 .image span:before {
@@ -144,7 +141,7 @@ body {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-bottom-color: whitesmoke;
-  box-shadow: 4px 4px 4px rgba(156, 142, 135, 0.541);
+  box-shadow: 3px 5px 5px rgba(156, 142, 135, 0.541);
 }
 
 .menu-closed {
@@ -223,7 +220,7 @@ main {
   }
 
 #resources-container {
-  box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
+  box-shadow: 3px 5px 5px rgba(156, 142, 135, 0.541);
 }
 
   /*TEXT CONTAINERS*/
@@ -241,6 +238,7 @@ main {
 #project-description {
   margin-left: 10px;
   margin-right: 10px;
+  padding: 0.2rem 1rem;
   border-radius: 5px;
   font-size: 1.4rem;
 }
@@ -266,11 +264,12 @@ background-color: #f5f5f5;
 margin: 5px;
 padding: 1rem;
 border-radius: 5px;
-box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
+box-shadow: 3px 5px 5px rgba(156, 142, 135, 0.541);
 }
 
 #top-10-top, #top-10-top1 {
 padding: 1rem;
+margin-bottom: 0;
 }
     
 
@@ -553,7 +552,7 @@ footer {
   .content-image {
     width: 75vmin;
     margin: 0 auto;
-    box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
+    box-shadow: 3px 5px 5px rgba(156, 142, 135, 0.541);
 
   }
 
@@ -574,7 +573,7 @@ footer {
   .single-event-img {
     margin: 0 auto;
     width: 60vw;
-    box-shadow: -8px 8px 8px rgba(156, 142, 135, 0.541);
+    box-shadow: 3px 5px 5px rgba(156, 142, 135, 0.541);
   }
   
   #fb-logo-img, #twitter-logo-img, #email-symbol-img {
@@ -612,7 +611,6 @@ footer {
     top: 1rem;
   }
 
-
   .menu {
     position: absolute;
     height: fit-content;
@@ -621,6 +619,15 @@ footer {
     overflow-y: auto;
     padding-top: 4rem;
   }
+
+  .image span {
+    top: 0.5rem;
+  }
+
+  .image span, .image span:before, .image span:after {
+    width: 31px;
+    height: 6px;
+}
 
   /*HEADINGS - LARGE SCREENS*/
 
@@ -676,7 +683,7 @@ footer {
   }
 
   #project-description {
-    padding: 0rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 1rem 5rem;
   }
 
