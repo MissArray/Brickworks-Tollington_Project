@@ -34,6 +34,8 @@ Brickworks logo: https://hanleycrouch.wordpress.com/
 ### Original project: deployed on Heroku
 https://brickworks-social-action.herokuapp.com/
 
+## Prototype for original project
+https://www.figma.com/proto/iQTdIV18rpBHm1MBE4ggR0/Brickworks-1?node-id=1%3A6&scaling=scale-down&redirected=1
 
 ## To view this fork
 * Clone the link of this repository
